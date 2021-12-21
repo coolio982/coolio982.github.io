@@ -4,7 +4,6 @@
   "main": "index.html",
   "dependencies": {
     "bulma": "^0.9.3",
-    "bulma-extensions": "^6.2.7",
     "bulma-switch": "^2.0.0",
     "node-sass": "^7.0.0"
   },
