@@ -1,0 +1,30 @@
+{
+  "name": "coolio982.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "bulma-extensions": "^6.2.7",
+    "bulma-switch": "^2.0.0",
+    "node-sass": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url css/mystyles.css",
+    "scss-watch": "node-sass --watch scss -o css",
+    "scss-build": "node-sass scss -o css",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolio982/coolio982.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coolio982/coolio982.github.io/issues"
+  },
+  "homepage": "https://github.com/coolio982/coolio982.github.io#readme",
+  "description": ""
+}
