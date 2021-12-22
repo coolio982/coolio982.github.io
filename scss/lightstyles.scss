@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 $primary:  #080808; 
-
+$info:#f1f1f1;
 nav {
     position: sticky;
     top: 0;
@@ -65,7 +65,7 @@ nav h1 {
 
   
 .burger-menu {
-    color: var(--primary-color);
+    color: $info;
     font-size: 2rem;
     border: 0;
     background-color: transparent;
@@ -85,9 +85,48 @@ nav h1 {
 }
 .project-table{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(25%,1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 	grid-gap: 0.5em;
 }
+.badge{
+  border-width:0.4rem;
+  border-radius:0.5rem;
+  padding:0.3rem;
+  border:solid;
+  display: inline-block;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: $info;
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+}
+
 $title-color:black;
 $card-background-color:rgba(240, 239, 224, 0.925);
 @import "../node_modules/bulma/bulma.sass";

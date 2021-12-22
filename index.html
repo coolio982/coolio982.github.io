@@ -6,6 +6,8 @@
     <title>Wendy Gao-Yin | SWE </title>
     <!--CSS Styles -->
     <link id = "styleall" rel="stylesheet" href="css/lightstyles.css">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Favicons -->
     <link rel="icon" href="assets/icons/favicon-32x32.png"/>
   </head>
@@ -23,7 +25,10 @@
           <input id="switchRoundedInfo" type="checkbox" name="switchRoundedInfo" class="switch is-rounded is-info" onclick="toggle()">
           <label for="switchRoundedInfo">Switch Mode</label>
         </div></li>
-      </ul>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <p class="has-text-primary">☰</p>
+        </button>
       
     </nav>
     <div class="container">
@@ -45,7 +50,8 @@
         ><strong>CV</strong></a>
     </div>
     </div>
-    <section class="hero" id="about">
+    <br>
+    <section class="hero card has-background-info" id="about">
       <!-- <img
         src="assets/images/sunrise.jpeg"
         alt="it's a me, mario"
@@ -54,27 +60,40 @@
         width="50%"
       /> -->
       <div>
-        <h2 class="title is-2 has-text-primary">About Me</h2>
+        <br>
+        <h2 class="title is-2 has-text-primary has-text-centered">About Me</h2>
+        <div style="padding:2%">
         <p class="subtitle is-6">
           Hello! I am a third year student studying <strong>Electronic and Information Engineering</strong> at Imperial College London. I'm a full stack developer, 
           musician and part time juggler. 
+          <br>
         </p>
+        </div>
       </div>
     </section>
     <br>
-    <section class="experience" id="experience">
+    <section class="experience card has-background-info" id="experience">
       <div>
         <h2 class="title is-2 has-text-primary has-text-centered">Experience</h2>
+        <div style="padding:2%">
         <p class="subtitle is-6">
-          HarHARHAR
+          Youtube!
         </p>
+        <p class="subtitle is-6">
+          Aidaro!
+        </p>
+        <p class="subtitle is-6">
+          More things!
+        </p>
+        <br>
+      </div>
       </div>
     </section>
     <br>
-    <section class="projects" id="projects">
+    <section class="projects card has-background-info" id="projects">
       <div>
         <h2 class="title is-2 has-text-primary has-text-centered">Projects</h2>
-        <div class="project-table">
+        <div class="project-table" style="padding:2%">
           <div class="card">
             <div class="card-image">
               <figure class="image is-4by3">
@@ -212,13 +231,41 @@
               </div>
             </div>
           </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="assets/images/game.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="assets/images/pygamehead.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">RGB RPG</p>
+                  <p class="subtitle is-6">A Python RPG</p>
+                </div>
+              </div>
+      
+              <div class="content">
+                <p class="subtitle is-6">Used Pygame to create an educational RPG using point and click movements. Stored user data and revision questions in a SQLite database. The game was based off existing programs such as Prodigy and Dragonfable!  
+                </p>
+                <br>
+                <time datetime="2020">Summer 2019</time>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <br>
-    <section class="education" id="education">
+    <section class="education card has-background-info" id="education">
       <div>
         <h2 class="title is-2 has-text-primary has-text-centered">Education</h2>
+        <div style="padding:2%">
         <p class="title is-4 has-text-primary">
           Imperial College London
         </p>
@@ -257,20 +304,41 @@
         <p class="subtitle is-6 has-text-primary">
           3 grade 9s, 6 A*s, 1A including English and Maths  
          </p>
+        </div>
       </div>
+      <br>
     </section>
     <br>
     <br>
-    <section class="skills" id="skills">
+    <section class="skills card has-background-info" id="skills">
       <div>
         <h2 class="title is-2 has-text-primary has-text-centered" >Skills</h2>
-        <p class="subtitle is-6">
-          HarHARHAR
-        </p>
+        <div style="padding:2%">
+          <div class="has-text-centered" id="skillz">
+          </div>
+        <br>
+      </div>
       </div>
     </section>
   </body>
   <script type='text/javascript'>
+    const burger = document.querySelector("#burger-menu");
+    const ul = document.querySelector("nav ul");
+    const nav = document.querySelector("nav");
+    burger.addEventListener("click", () => {
+      ul.classList.toggle("show");
+    });
+
+    // Select nav links
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach((link) =>
+      link.addEventListener("click", () => {
+        ul.classList.remove("show");
+      })
+    );
+
+
     function toggle() {
         var el = document.getElementById("styleall");
         if (el.href.match("css/lightstyles.css")) {
@@ -280,5 +348,15 @@
             el.href = "css/lightstyles.css";  
         }
     }
+    var skills = ["C++", "Python", "AWS", "Piano", "Cello", "Ukelele", "Ocarina", "Recorder", "Juggling", "German", "Mandarin", "English", "Verilog", "SQL","Google", "Simulation", "Stop Motion", "Japanese"]
+
+    let elem = document.getElementById("skillz");
+    var str = "";
+    for (const s of skills){
+      console.log(s);
+      str+="<span class=\"subtitle is-6 badge\" style=\"margin: 6px; font-size: 1.2rem; background-color: transparent; border-color: $primary;\"><span>"+s+"</span></span>";
+    }
+    elem.innerHTML = str;
+
     </script>
 </html>
