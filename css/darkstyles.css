@@ -53,6 +53,11 @@ nav ul li {
   border: solid;
   display: inline-block; }
 
+.project-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 0.5em; }
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 720px) {
   nav {
@@ -72,12 +77,11 @@ nav ul li {
   .burger-menu {
     display: block; }
   nav ul.show {
-    transform: translateX(0); } }
-
-.project-table {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 0.5em; }
+    transform: translateX(0); }
+  .project-table {
+    display: inline;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 0.5em; } }
 
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */

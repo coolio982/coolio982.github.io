@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wendy Gao-Yin | SWE </title>
-    <!--CSS Styles -->
-    <link id = "styleall" rel="stylesheet" href="css/lightstyles.css">
-    <!-- Load an icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Favicons -->
-    <link rel="icon" href="assets/icons/favicon-32x32.png"/>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wendy Gao-Yin | SWE </title>
+  <!--CSS Styles -->
+  <link id="styleall" rel="stylesheet" href="css/lightstyles.css">
+  <!-- Load an icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Favicons -->
+  <link rel="icon" href="assets/icons/favicon-32x32.png" />
+</head>
+
+<body>
   <section class="section">
     <nav>
       <img src="assets/icons/favicon-32x32.png" alt="Wendy Gao-Yin">
@@ -21,15 +23,18 @@
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><div class="field">
-          <input id="switchRoundedInfo" type="checkbox" name="switchRoundedInfo" class="switch is-rounded is-info" onclick="toggle()">
-          <label for="switchRoundedInfo">Switch Mode</label>
-        </div></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <p class="has-text-primary">☰</p>
-        </button>
-      
+        <li>
+          <div class="field">
+            <input id="switchRoundedInfo" type="checkbox" name="switchRoundedInfo" class="switch is-rounded is-info"
+              onclick="toggle()">
+            <label for="switchRoundedInfo">Switch Mode</label>
+          </div>
+        </li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <p class="has-text-primary">☰</p>
+      </button>
+
     </nav>
     <div class="container">
       <h1 class="title is-1 has-text-primary">
@@ -38,17 +43,13 @@
       <p class="subtitle">
         Penultimate year EIE student @ Imperial College London
       </p>
-  
-    <div class="contact me">
-      <a href="mailto:wendy.gao@live.co.uk" target="_blank"
-        ><strong>email</strong></a> |
-      <a href="https://github.com/coolio982" target="_blank"
-        ><strong>gitHub</strong></a> |
-      <a href="https://www.linkedin.com/in/wendy-gao-yin/" target="_blank"
-        ><strong>linkedIn</strong></a> |
-      <a href="assets/CV.pdf" target="_blank"
-        ><strong>CV</strong></a>
-    </div>
+
+      <div class="contact me">
+        <a href="mailto:wendy.gao@live.co.uk" target="_blank"><strong>email</strong></a> |
+        <a href="https://github.com/coolio982" target="_blank"><strong>gitHub</strong></a> |
+        <a href="https://www.linkedin.com/in/wendy-gao-yin/" target="_blank"><strong>linkedIn</strong></a> |
+        <a href="assets/CV.pdf" target="_blank"><strong>CV</strong></a>
+      </div>
     </div>
     <br>
     <section class="hero card has-background-info" id="about">
@@ -63,11 +64,14 @@
         <br>
         <h2 class="title is-2 has-text-primary has-text-centered">About Me</h2>
         <div style="padding:2%">
-        <p class="subtitle is-6">
-          Hello! I am a third year student studying <strong>Electronic and Information Engineering</strong> at Imperial College London. I'm a full stack developer, 
-          musician and part time juggler. 
-          <br>
-        </p>
+          <p class="subtitle is-6">
+            Hello! I am a third year student studying <a
+              href="https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electronic-information-meng/"
+              target="_blank">Electronic and Information Engineering</a> at
+            Imperial College London. I'm a full stack developer,
+            musician and part time juggler.
+            <br>
+          </p>
         </div>
       </div>
     </section>
@@ -76,234 +80,275 @@
       <div>
         <h2 class="title is-2 has-text-primary has-text-centered">Experience</h2>
         <div style="padding:2%">
-        <p class="subtitle is-6">
-          Youtube!
-        </p>
-        <p class="subtitle is-6">
-          Aidaro!
-        </p>
-        <p class="subtitle is-6">
-          More things!
-        </p>
-        <br>
-      </div>
-      </div>
-    </section>
-    <br>
-    <section class="projects card has-background-info" id="projects">
-      <div>
-        <h2 class="title is-2 has-text-primary has-text-centered">Projects</h2>
-        <div class="project-table" style="padding:2%">
           <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="assets/images/rover.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="assets/images/realrover.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">Mars Rover</p>
-                  <p class="subtitle is-6">An autonomous rover to explore unknown terrain</p>
-                </div>
+            <div class="columns">
+              <div class="column is-one-fifth">
+                <figure class="image is-128x128 center">
+                  <img src="assets/images/youtubesquare.png" alt="google youtube">
+                </figure>
               </div>
-      
-              <div class="content">
-                <p class="subtitle is-6">AS a team of 6, we created a rover capable of seeing obstacles and automatically routing around them.
-                  We implemented self navigation features and scanning, so we could display a map on a dashboard created using the MERN stack. Communication was possible using a pub sub architecture and UART. 
-                </p>
-                <br>
-                <time datetime="2020">Summer 2021</time>
+              <div class="column is-four-fifths">
+                <p class="title is-4">Google Youtube - STEP Intern</p>
+                <p class="subtitle is-6"><i>Paris | July - September 2021</i></p>
+                <p class="subtitle is-6">• Created a microservice to reprocess channels<br>• Built a debugging dashboard
+                  to synthesize information from multiple data sources</p>
               </div>
             </div>
           </div>
+        </div>
+        <div style="padding:2%">
           <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="assets/images/iOT.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="assets/images/avocado.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">Avocado Protector</p>
-                  <p class="subtitle is-6">A network of FPGAs (for patrolling the avocado fields)</p>
-                </div>
+            <div class="columns">
+              <div class="column is-one-fifth">
+                <figure class="image is-128x128 center">
+                  <img src="assets/images/aidaro.png" alt="google youtube">
+                </figure>
               </div>
-      
-              <div class="content">
-                <p class="subtitle is-6">Used Python, C++ and verilog in combinations with FPGAs. Used signal processing to detect suddent movements and socket programming with JTAG-UART to communicate between devices.
-                Messages were encrypted and sent across TCP.
-                </p>
-                <br>
-                <time datetime="2020">Spring 2021</time>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="assets/images/cogs.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="assets/images/C.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">C99 to MIPS compiler </p>
-                  <p class="subtitle is-6">A C++ compiler</p>
-                </div>
-              </div>
-      
-              <div class="content">
-                <p class="subtitle is-6">Used C++, makefiles, and bash scripting to create a C to MIPS compiler capable of converting functions, arrays, arithmetic and enums (to name a few).
-                </p>
-                <br>
-                <time datetime="2020">Spring 2021</time>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="assets/images/CPU.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="assets/images/MIPS.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">MIPS CPU</p>
-                  <p class="subtitle is-6">A Verilog implementation of a MIPS processor</p>
-                </div>
-              </div>
-      
-              <div class="content">
-                <p class="subtitle is-6">Used System Verilog to create a five stage MIPS processor following the Harvard architecture. Created a test bench using C++ and bash scripts, which could be used to test any Harvard implementation.
-                </p>
-                <br>
-                <time datetime="2020">Autumn 2020</time>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="assets/images/Oscilloscope.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="assets/images/generic_code.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">Circuit Simulator</p>
-                  <p class="subtitle is-6">A C++ program to simulate simple circuits</p>
-                </div>
-              </div>
-      
-              <div class="content">
-                <p class="subtitle is-6">Used C++ to create a circuit simulator similar to LTSpice. Supported resistors, inductors, capacitors and diodes, using the Eigen library and matrix methods to simplify calculations. 
-                </p>
-                <br>
-                <time datetime="2020">Summer 2020</time>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="assets/images/game.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="assets/images/pygamehead.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">RGB RPG</p>
-                  <p class="subtitle is-6">A Python RPG</p>
-                </div>
-              </div>
-      
-              <div class="content">
-                <p class="subtitle is-6">Used Pygame to create an educational RPG using point and click movements. Stored user data and revision questions in a SQLite database. The game was based off existing programs such as Prodigy and Dragonfable!  
-                </p>
-                <br>
-                <time datetime="2020">Summer 2019</time>
+              <div class="column is-four-fifths">
+                <p class="title is-4">Aidaro - SWE Intern</p>
+                <p class="subtitle is-6"><i>Malaysia | July - September 2020</i></p>
+                <p class="subtitle is-6">• Created a pipeline for ETL procedures<br>• Scraped the web for housing data
+                  and used POI data to categorise houses for machine learning purposes</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
+      <br>
+      </div>
+      </div>
+    </section>
+    <br>
+    <section class="projects card container has-background-info" id="projects">
+
+      <h2 class="title is-2 has-text-primary has-text-centered">Projects</h2>
+
+      <div class="project-table" style="padding:2%">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/rover.png" alt="mars rover">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/realrover.png" alt="rover">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Mars Rover</p>
+                <p class="subtitle is-6">An autonomous rover to explore unknown terrain</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="subtitle is-6">As a team of 6, we created a rover capable of seeing obstacles and automatically
+                routing around them.
+                We implemented self navigation features and scanning, so we could display a map on a dashboard created
+                using the MERN stack. Communication was possible using a pub sub architecture and UART.
+              </p>
+              <br>
+              <time datetime="2020">Summer 2021</time>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/iOT.png" alt="IoT">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/avocado.png" alt="avocado">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Avocado Protector</p>
+                <p class="subtitle is-6">A network of FPGAs (for patrolling the avocado fields)</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="subtitle is-6">Used Python, C++ and verilog in combinations with FPGAs. Used signal processing
+                to detect suddent movements and socket programming with JTAG-UART to communicate between devices.
+                Messages were encrypted and sent across TCP.
+              </p>
+              <br>
+              <time datetime="2020">Spring 2021</time>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/cogs.png" alt="compiler">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/C.png" alt="C">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">C99 to MIPS compiler </p>
+                <p class="subtitle is-6">A C++ compiler</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="subtitle is-6">Used C++, makefiles, and bash scripting to create a C to MIPS compiler capable of
+                converting functions, arrays, arithmetic and enums (to name a few).
+              </p>
+              <br>
+              <time datetime="2020">Spring 2021</time>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/CPU.png" alt="CPU">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/MIPS.png" alt="MIPS">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">MIPS CPU</p>
+                <p class="subtitle is-6">A Verilog implementation of a MIPS processor</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="subtitle is-6">Used System Verilog to create a five stage MIPS processor following the Harvard
+                architecture. Created a test bench using C++ and bash scripts, which could be used to test any Harvard
+                implementation.
+              </p>
+              <br>
+              <time datetime="2020">Autumn 2020</time>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/Oscilloscope.png" alt="Oscilloscope">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/generic_code.png" alt="code">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Circuit Simulator</p>
+                <p class="subtitle is-6">A C++ program to simulate simple circuits</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="subtitle is-6">Used C++ to create a circuit simulator similar to LTSpice. Supported resistors,
+                inductors, capacitors and diodes, using the Eigen library and matrix methods to simplify calculations.
+              </p>
+              <br>
+              <time datetime="2020">Summer 2020</time>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/game.png" alt="game">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/pygamehead.png" alt="snek">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">RGB RPG</p>
+                <p class="subtitle is-6">A Python RPG</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="subtitle is-6">Used Pygame to create an educational RPG using point and click movements. Stored
+                user data and revision questions in a SQLite database. The game was based off existing programs such as
+                Prodigy and Dragonfable!
+              </p>
+              <br>
+              <time datetime="2020">Summer 2019</time>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
     </section>
     <br>
     <section class="education card has-background-info" id="education">
       <div>
         <h2 class="title is-2 has-text-primary has-text-centered">Education</h2>
         <div style="padding:2%">
-        <p class="title is-4 has-text-primary">
-          Imperial College London
-        </p>
-        <p class="title is-6 has-text-primary">
-          MEng Electronic and Information Engineering · 2019 - 2023
-        </p>
-        <p class="subtitle is-6 has-text-primary">
-          Year 3: Introduction to Machine Learning, Mathematics for Signals and Systems, Communication Networks, Operations Research
+          <p class="title is-4 has-text-primary">
+            Imperial College London
+          </p>
+          <p class="title is-6 has-text-primary">
+            MEng Electronic and Information Engineering · 2019 - 2023
+          </p>
+          <p class="subtitle is-6 has-text-primary">
+            Year 3: Introduction to Machine Learning, Mathematics for Signals and Systems, Communication Networks,
+            Operations Research
+            <br>
+            Grade: ??
+            <br>
+            <br>
+            Year 2: Mathematics, Discrete Mathematics, Instruction Architecture and Compilers, Software Systems,
+            Information Processing, Control Systems, Communications, Computer Engineering Design
+            <br>
+            Grade: 1st
+            <br>
+            <br>
+            Year 1: Analysis and Design of Circuits, Digital Electronics and Computer Architecture, Mathematics,
+            Programming for Engineers, Electronics Design Project
+            <br>
+            Grade: 1st
+          </p>
           <br>
-          Grade: ??
+          <p class="title is-4 has-text-primary">
+            Altrincham Grammar School For Girls
+          </p>
+          <p class="title is-6 has-text-primary">
+            A Levels · 2017-2019
+          </p>
+          <p class="subtitle is-6 has-text-primary">
+            A*A*A*A*A* in Mathematics, Further Mathematics, Physics, Computer Science, EPQ(on the notion of randomness)
+          </p>
           <br>
-          <br>
-          Year 2: Mathematics, Discrete Mathematics, Instruction Architecture and Compilers, Software Systems, Information Processing, Control Systems, Communications, Computer Engineering Design
-          <br>
-          Grade: 1st
-          <br>
-          <br>
-          Year 1: Analysis and Design of Circuits, Digital Electronics and Computer Architecture, Mathematics, Programming for Engineers, Electronics Design Project
-          <br>
-          Grade: 1st
-        </p>
-        <br>
-        <p class="title is-4 has-text-primary">
-          Altrincham Grammar School For Girls
-        </p>
-        <p class="title is-6 has-text-primary">
-          A Levels · 2017-2019
-        </p>
-        <p class="subtitle is-6 has-text-primary">
-          A*A*A*A*A* in Mathematics, Further Mathematics, Physics, Computer Science, EPQ(on the notion of randomness)
-         </p>
-         <br>
-        <p class="title is-6 has-text-primary">
-          GCSES · 2012-2017
-        </p>
-        <p class="subtitle is-6 has-text-primary">
-          3 grade 9s, 6 A*s, 1A including English and Maths  
-         </p>
+          <p class="title is-6 has-text-primary">
+            GCSES · 2012-2017
+          </p>
+          <p class="subtitle is-6 has-text-primary">
+            3 grade 9s, 6 A*s, 1A including English and Maths
+          </p>
         </div>
       </div>
       <br>
@@ -312,51 +357,52 @@
     <br>
     <section class="skills card has-background-info" id="skills">
       <div>
-        <h2 class="title is-2 has-text-primary has-text-centered" >Skills</h2>
+        <h2 class="title is-2 has-text-primary has-text-centered">Skills</h2>
         <div style="padding:2%">
           <div class="has-text-centered" id="skillz">
           </div>
-        <br>
-      </div>
+          <br>
+        </div>
       </div>
     </section>
-  </body>
-  <script type='text/javascript'>
-    const burger = document.querySelector("#burger-menu");
-    const ul = document.querySelector("nav ul");
-    const nav = document.querySelector("nav");
-    burger.addEventListener("click", () => {
-      ul.classList.toggle("show");
-    });
+</body>
+<script type='text/javascript'>
+  const burger = document.querySelector("#burger-menu");
+  const ul = document.querySelector("nav ul");
+  const nav = document.querySelector("nav");
+  burger.addEventListener("click", () => {
+    ul.classList.toggle("show");
+  });
 
-    // Select nav links
-    const navLink = document.querySelectorAll(".nav-link");
+  // Select nav links
+  const navLink = document.querySelectorAll(".nav-link");
 
-    navLink.forEach((link) =>
-      link.addEventListener("click", () => {
-        ul.classList.remove("show");
-      })
-    );
+  navLink.forEach((link) =>
+    link.addEventListener("click", () => {
+      ul.classList.remove("show");
+    })
+  );
 
 
-    function toggle() {
-        var el = document.getElementById("styleall");
-        if (el.href.match("css/lightstyles.css")) {
-            el.href = "css/darkstyles.css";    
-        }
-        else {
-            el.href = "css/lightstyles.css";  
-        }
+  function toggle() {
+    var el = document.getElementById("styleall");
+    if (el.href.match("css/lightstyles.css")) {
+      el.href = "css/darkstyles.css";
     }
-    var skills = ["C++", "Python", "AWS", "Piano", "Cello", "Ukelele", "Ocarina", "Recorder", "Juggling", "German", "Mandarin", "English", "Verilog", "SQL","Google","HTML","CSS", "Javascript", "Backend","Frontend", "ETL","Simulation", "Stop Motion", "Japanese"]
-
-    let elem = document.getElementById("skillz");
-    var str = "";
-    for (const s of skills){
-      console.log(s);
-      str+="<span class=\"subtitle is-6 badge\" style=\"margin: 6px; font-size: 1.2rem; background-color: transparent; border-color: $primary;\"><span>"+s+"</span></span>";
+    else {
+      el.href = "css/lightstyles.css";
     }
-    elem.innerHTML = str;
+  }
+  var skills = ["C++", "Python", "AWS", "Piano", "Cello", "Ukelele", "Ocarina", "Docker", "Git", "OOP", "Postman", "Recorder", "Juggling", "German", "Mandarin", "English", "Verilog", "SQL", "Google", "HTML", "CSS", "Javascript", "Backend", "Frontend", "ETL", "Simulation", "Stop Motion", "Japanese"]
 
-    </script>
+  let elem = document.getElementById("skillz");
+  var str = "";
+  for (const s of skills) {
+    console.log(s);
+    str += "<span class=\"subtitle is-6 badge\" style=\"margin: 6px; font-size: 1.2rem; background-color: transparent; border-color: $primary;\"><span>" + s + "</span></span>";
+  }
+  elem.innerHTML = str;
+
+</script>
+
 </html>

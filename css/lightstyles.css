@@ -99,7 +99,11 @@ nav ul li {
   .burger-menu {
     display: block; }
   nav ul.show {
-    transform: translateX(0); } }
+    transform: translateX(0); }
+  .project-table {
+    display: inline;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 0.5em; } }
 
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
