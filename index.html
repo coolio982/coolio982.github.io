@@ -128,11 +128,71 @@
       </div>
     </section>
     <br>
-    <section class="projects card container has-background-info" id="projects">
+        <section class="projects card container has-background-info" id="projects">
 
       <h2 class="title is-2 has-text-primary has-text-centered">Projects</h2>
 
       <div class="project-table" style="padding:2%">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/realsynth.png" alt="embedded synth">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/vectorsynth.png" alt="synth">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Embedded Synthesizer</p>
+                <p class="subtitle is-6">Electric synth using RT processing techniques</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="subtitle is-6">Developed stacking synthesizer software with Platformio using the STM32duino
+                framework. Hardware was controlled using a ST NUCLEO-L432KC microcontroller module containing a
+                STM32L432KCU6U processor with an Arm Cortex-M4 core, and keyboards communicated using a CAN bus. 
+                <a href="https://www.youtube.com/watch?v=HB6zd-5iiS8&ab_channel=Electroboiis">Demo</a>
+              </p>
+              <br>
+              <time datetime="2020">Spring 2022</time>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/app-sc.png" alt=" embedded fish tank">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="assets/images/Fish.png" alt="fish tank">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">AIQuarium</p>
+                <p class="subtitle is-6">Fish Tank Environment Regulator</p>
+              </div>
+            </div>
+            <div class="content">
+              <p class="subtitle is-6">
+                Used a raspberry pi and sensors connected using I2C to calculate metrics about the environment and
+                make adjustments accordingly. Developed a product website allowing users to log in to control and
+                monitor devices unique to them.
+                <a href="https://www.youtube.com/watch?v=QbN6Gd6wdxM&ab_channel=Electroboiis">Promotional Video</a>
+              </p>
+              <br>
+              <time datetime="2022">Spring 2022</time>
+            </div>
+          </div>
+        </div>
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
@@ -153,10 +213,10 @@
             </div>
 
             <div class="content">
-              <p class="subtitle is-6">As a team of 6, we created a rover capable of seeing obstacles and automatically
-                routing around them.
-                We implemented self navigation features and scanning, so we could display a map on a dashboard created
-                using the MERN stack. Communication was possible using a pub sub architecture and UART.
+              <p class="subtitle is-6">Created a rover capable of seeing obstacles and automatic routing, as a team of
+                six.
+                Implemented self navigation features and scanning, as well as energy monitoring via a dashboard created
+                using the MERN stack. Communication was possible using a pub-sub architecture and UART.
               </p>
               <br>
               <time datetime="2020">Summer 2021</time>
