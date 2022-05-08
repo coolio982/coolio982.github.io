@@ -12,13 +12,13 @@ $beige-lighter: #EFF0EB;
 $grey-dark: $beige-light;
 $grey-light: $beige-lighter;
 $primary: $beige-light; 
-$link: $beige-light;
+$link: hsl(217, 71%, 53%);
+$info:#050504;
 
 
 // Update some of Bulma's component variables
 $body-background-color: black;
 $body-color: $beige-lighter;
-
 
 nav {
     position: sticky;
@@ -29,7 +29,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -52,11 +52,11 @@ nav h1 {
   }
   
   nav ul li {
+    color: var(--primary-color);
     font-weight: var(--bold-font);
   }
 
-  
-.burger-menu {
+  .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
     border: 0;
@@ -74,15 +74,63 @@ nav h1 {
   .container{
     text-align: center;
 }
+.badge{
+  border-width:0.4rem;
+  border-radius:0.5rem;
+  padding:0.3rem;
+  border:solid;
+  display: inline-block;
 
+}
 .project-table{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(25%,1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 	grid-gap: 0.5em;
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: $info;
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+  .project-table{
+    display: inline;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap: 0.5em;
+
+  }
+
+}
+
+
+
+
+
 $title-color:$beige-light;
-$card-background-color:rgba(2, 2, 36, 0.877);
+$card-background-color:rgba(41, 41, 41, 0.877);
 // Import Bulma
 @import "../node_modules/bulma/bulma.sass";
 @import '../node_modules/bulma-switch/dist/css/bulma-switch.min.css';
-
