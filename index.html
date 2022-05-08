@@ -56,10 +56,10 @@
   <nav>
     <a href="#large-header"><img src="assets/icons/favicon-32x32.png" href="#large-header" alt="Wendy Gao-Yin"></a>
     <ul class="navigation has-text-black" style="font-size:2vh">
-      <li><a href="#about" class="nav-link h">About</a></li>
       <li><a href="#experience" class="nav-link h">Experience</a></li>
-      <li><a href="#projects" class="nav-link h">Projects</a></li>
       <li><a href="#education" class="nav-link h">Education</a></li>
+      <li><a href="#projects" class="nav-link h">Projects</a></li>
+      <li><a href="#activities" class="nav-link h">Activities</a></li>
       <li><a href="#skills" class="nav-link h">Skills</a></li>
     </ul>
     <button class="burger-menu" id="burger-menu">
@@ -67,7 +67,7 @@
     </button>
 
   </nav>
-  <section class="has-background-white" id="about">
+  <section class="has-background-white-ter" id="about">
     <div style="padding-left: 10%;padding-right: 10%;">
       <br>
       <h2 class="title is-2 has-text-black has-text-centered">About Me</h2>
@@ -83,14 +83,14 @@
       </div>
     </div>
   </section>
-  <section class="has-background-white-ter" id="experience">
+  <section class="has-background-white" id="experience">
     <div style="padding-left: 10%;padding-right: 10%;">
       <h2 class="title is-2 has-text-black has-text-centered">Experience</h2>
       <div style="padding:2%">
         <div class="columns">
           <div class="column is-one-fifth">
             <figure class="image is-128x128 center">
-              <a href="https://pdtpartners.com/"><img class="is-rounded box m-0 p-0 has-shadow"
+              <a href="https://pdtpartners.com/"><img class="is-rounded box m-0 p-0 has-shadow  circle-button"
                   src="assets/images/PDT.jpg" alt="pdt"></a>
             </figure>
           </div>
@@ -108,7 +108,7 @@
         <div class="columns">
           <div class="column is-one-fifth">
             <figure class="image is-128x128 center">
-              <a href="https://www.youtube.com/"><img class="is-rounded box m-0 p-0 has-shadow"
+              <a href="https://www.youtube.com/"><img class="is-rounded box m-0 p-0 has-shadow circle-button"
                   src="assets/images/youtubesquare.png" alt="google youtube"></a>
             </figure>
           </div>
@@ -128,8 +128,9 @@
         <div class="columns">
           <div class="column is-one-fifth">
             <figure class="image is-128x128 center">
-              <a href="https://www.facebook.com/diamlah.business/"><img class="is-rounded box m-0 p-0 has-shadow"
-                  src="assets/images/aidaro.png" alt="aidaro"></a>
+              <a href="https://www.facebook.com/diamlah.business/"><img
+                  class="is-rounded box m-0 p-0 has-shadow circle-button" src="assets/images/aidaro.png"
+                  alt="aidaro"></a>
             </figure>
           </div>
           <div class="column is-four-fifths has-text-left">
@@ -148,6 +149,63 @@
     </div>
     </div>
   </section>
+  <section class="has-background-white-ter" id="education">
+    <div style="padding-left: 10%;padding-right: 10%;">
+      <h2 class="title is-2 has-text-black has-text-centered">Education</h2>
+
+      <div style="padding:2%" class=" has-text-left">
+        <a
+          href="https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electronic-information-meng/">
+          <p class="title is-3 has-text-black">
+            Imperial College London
+          </p>
+        </a>
+        <p class="title is-5 has-text-black">
+          MEng Electronic and Information Engineering · 2019 - 2023
+        </p>
+        <p class="subtitle is-5 has-text-black">
+          Year 3: Introduction to Machine Learning, Mathematics for Signals and Systems, Communication Networks,
+          Operations Research, Advanced Databases, Embedded Systems, Computer Vision
+          <br>
+          Grade: ??
+          <br>
+          <br>
+          Year 2: Mathematics, Discrete Mathematics, Instruction Architecture and Compilers, Software Systems,
+          Information Processing, Control Systems, Communications, Computer Engineering Design
+          <br>
+          Grade: 1st Class
+          <br>
+          <br>
+          Year 1: Analysis and Design of Circuits, Digital Electronics and Computer Architecture, Mathematics,
+          Programming for Engineers, Electronics Design Project
+          <br>
+          Grade: 1st Class
+        </p>
+        <br>
+        <hr style="color:white;"/>
+        <a href="http://www.aggs.trafford.sch.uk/">
+          <p class="title is-3 has-text-black">
+            Altrincham Grammar School For Girls
+          </p>
+        </a>
+        <p class="title is-5 has-text-black">
+          A Levels · 2017-2019
+        </p>
+        <p class="subtitle is-5 has-text-black">
+          A*A*A*A*A* in Mathematics, Further Mathematics, Physics, Computer Science, EPQ
+        </p>
+        <br>
+        <p class="title is-5 has-text-black">
+          GCSES · 2012-2017
+        </p>
+        <p class="subtitle is-5 has-text-black">
+          3 grade 9s, 6 A*s, 1A including English and Maths
+        </p>
+      </div>
+    </div>
+    <br>
+  </section>
+  <hr>
   <section class="has-background-white" id="projects">
 
     <h2 class="title is-2 has-text-black has-text-centered">Projects</h2>
@@ -286,7 +344,8 @@
 
             <div class="content">
               <p class="subtitle has-text-white is-5">Implemented a C to MIPS compiler capable of
-                converting functions, arrays, arithmetic and enums (to name a few). Created unit testing infrastructure with
+                converting functions, arrays, arithmetic and enums (to name a few). Created unit testing infrastructure
+                with
                 generated test cases. Used C++, makefiles, and bash scripting.
               </p>
               <br>
@@ -385,61 +444,60 @@
 
   </section>
   <hr>
-  <section class="has-background-white-ter" id="education">
+  <section class="has-background-white-ter" id="activities">
     <div style="padding-left: 10%;padding-right: 10%;">
-      <h2 class="title is-2 has-text-black has-text-centered">Education</h2>
-
-      <div style="padding:2%" class=" has-text-left">
-        <p class="title is-3 has-text-black">
-          Imperial College London
-        </p>
-        <p class="title is-5 has-text-black">
-          MEng Electronic and Information Engineering · 2019 - 2023
-        </p>
-        <p class="subtitle is-5 has-text-black">
-          Year 3: Introduction to Machine Learning, Mathematics for Signals and Systems, Communication Networks,
-          Operations Research, Advanced Databases, Embedded Systems, Computer Vision
-          <br>
-          Grade: ??
-          <br>
-          <br>
-          Year 2: Mathematics, Discrete Mathematics, Instruction Architecture and Compilers, Software Systems,
-          Information Processing, Control Systems, Communications, Computer Engineering Design
-          <br>
-          Grade: 1st Class
-          <br>
-          <br>
-          Year 1: Analysis and Design of Circuits, Digital Electronics and Computer Architecture, Mathematics,
-          Programming for Engineers, Electronics Design Project
-          <br>
-          Grade: 1st Class
-        </p>
-        <br>
-        <p class="title is-3 has-text-black">
-          Altrincham Grammar School For Girls
-        </p>
-        <p class="title is-5 has-text-black">
-          A Levels · 2017-2019
-        </p>
-        <p class="subtitle is-5 has-text-black">
-          A*A*A*A*A* in Mathematics, Further Mathematics, Physics, Computer Science, EPQ
-        </p>
-        <br>
-        <p class="title is-5 has-text-black">
-          GCSES · 2012-2017
-        </p>
-        <p class="subtitle is-5 has-text-black">
-          3 grade 9s, 6 A*s, 1A including English and Maths
-        </p>
+      <h2 class="title is-2 has-text-black has-text-centered">Activities</h2>
+      <div>
+        <div class="columns">
+          <div class="column is-one-third">
+            <img class="has-shadow" src="assets/images/teach.png" alt="teach">
+          </div>
+          <div class="column is-two-thirds">
+            <p class="subtitle is-5 has-text-black has-text-left">
+              I like to use both my technical skills and general experiences for the benefit of others.
+              <br> I have consistently been a member of <a
+                href="https://www.imperialcollegeunion.org/activities/a-to-z/engineering-change" target="_blank"
+                class="has-text-link">Engineering
+                Change</a> at Imperial College London, which aims to leverage the technical abilities of
+              students and apply them
+              to useful real world projects. I have actively joined projects and took on the position of Tresurer for a
+              year.<br>I also enjoy teaching, and have been an Undergraduate Teaching Assistant for
+              mathematics. I have mentored Sixth Form students as part of <a href="https://www.zerogravity.co.uk/"
+                target="_blank" class="has-text-link">Zero Gravity</a>, and have lead coding workshops for children
+              using
+              the <a href="https://microbit.org/" target="_blank" class="has-text-link">BBC micro:bit</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr style="color:white;"/>
+      <div style="padding:2%">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <p class="subtitle is-5 has-text-black has-text-left">
+              I also have an interest in arts and culture, through which there are many vivid modes of expression to
+              explore. I have dabbled with various unique instruments, but mainly play the piano and cello. I find
+              music to be a
+              great way to communicate across cultures, but more concretely I have learnt some
+              Japanese, German, amd Mandarin Chinese.
+              <br>
+            </p>
+            <br>
+          </div>
+          <div class="column is-one-third">
+            <img class="has-shadow " src="assets/images/music.png" alt="music">
+          </div>
+        </div>
       </div>
     </div>
+    </div>
     <br>
+    </div>
   </section>
-  <hr>
   <section class="has-background-white" id="skills">
     <div style="padding-left: 10%;padding-right: 10%;">
       <h2 class="title is-2 has-text-black has-text-centered">Skills</h2>
-      <div style="padding:2%">
+      <div style="padding:1%">
         <div class="has-text-centered" id="skillz">
         </div>
         <br>

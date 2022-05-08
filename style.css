@@ -186,6 +186,7 @@ font-size: 1em;
 }
 /* Header */
 .large-header {
+  margin:0px;
 	position: relative;
 	width: 100%;
 	background: #333;
@@ -257,10 +258,26 @@ font-size: 1em;
 }
 
 body {
+  margin:0;
   font-family: 'Montserrat';
 }
 
 .button {
   width:100%;
   display:block;
+}
+
+.circle-button:hover {
+  transform: scale(1.1) perspective(1px)
+
+}
+.equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bottom-align{
+  margin-top: auto;
+  text-align: center;
 }
