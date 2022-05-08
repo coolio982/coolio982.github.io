@@ -65,3 +65,16 @@
     width:50%;
     margin:0 auto;
 }
+
+.column.gallery {
+  display: flex;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+.button {
+  width:100%;
+  display:block;
+}

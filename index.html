@@ -19,6 +19,7 @@
   </style>
   <link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'>
   <link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 </head>
 
@@ -27,12 +28,18 @@
   <div id="large-header" class="large-header">
     <canvas id="canvas"></canvas>
     <h1 class="main-title title is-1 has-text-white">
+      <figure class="image is-128x128 center">
+        <img class="is-rounded box m-0 p-0 has-shadow" src="assets/images/me.png" alt="me">
+      </figure>
+      <p style="font-size:1vh">
+        <br style="font-size:1vh">
+      </p>
       Wendy Gao-Yin
-      <p style="font-size:4vh">
-        <br>
+      <p style="font-size:3vh">
+        <br style="font-size:1vh">
         Penultimate year EIE student @ Imperial College London
       </p>
-      <div class="contact-me has-text-white" style="font-size:3vh">
+      <div class="contact-me has-text-white" style="font-size:2vh">
         <a href="mailto:wendy.gao@live.co.uk" class="has-text-white" target="_blank"><strong>Email</strong></a> |
         <a href="https://github.com/coolio982" class="has-text-white" target="_blank"><strong>GitHub</strong></a> |
         <a href="https://www.linkedin.com/in/wendy-gao-yin/" class="has-text-white"
@@ -48,7 +55,7 @@
 
   <nav>
     <a href="#large-header"><img src="assets/icons/favicon-32x32.png" href="#large-header" alt="Wendy Gao-Yin"></a>
-    <ul class="navigation has-text-black" style="font-size:3vh">
+    <ul class="navigation has-text-black" style="font-size:2vh">
       <li><a href="#about" class="nav-link h">About</a></li>
       <li><a href="#experience" class="nav-link h">Experience</a></li>
       <li><a href="#projects" class="nav-link h">Projects</a></li>
@@ -56,7 +63,7 @@
       <li><a href="#skills" class="nav-link h">Skills</a></li>
     </ul>
     <button class="burger-menu" id="burger-menu">
-      <p class="has-text-black">☰</p>
+      <p class="has-text-white">☰</p>
     </button>
 
   </nav>
@@ -83,26 +90,32 @@
         <div class="columns">
           <div class="column is-one-fifth">
             <figure class="image is-128x128 center">
-              <img src="assets/images/PDT.jpg" alt="pdt">
+              <a href="https://pdtpartners.com/"><img class="is-rounded box m-0 p-0 has-shadow"
+                  src="assets/images/PDT.jpg" alt="pdt"></a>
             </figure>
           </div>
           <div class="column is-four-fifths has-text-left">
-            <p class="title has-text-black is-4">PDT Partners - SWE Intern</p>
+            <a href="https://pdtpartners.com/careers">
+              <p class="title has-text-black is-4">PDT Partners - SWE Intern</p>
+            </a>
             <p class="subtitle has-text-black is-5"><i>London/New York | April - September 2022</i></p>
             <p class="subtitle has-text-black is-5">• TBC</p>
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
       <div style="padding:2%">
         <div class="columns">
           <div class="column is-one-fifth">
             <figure class="image is-128x128 center">
-              <img src="assets/images/youtubesquare.png" alt="google youtube">
+              <a href="https://www.youtube.com/"><img class="is-rounded box m-0 p-0 has-shadow"
+                  src="assets/images/youtubesquare.png" alt="google youtube"></a>
             </figure>
           </div>
           <div class="column is-four-fifths has-text-left">
-            <p class="title has-text-black is-4">Google Youtube - STEP Intern</p>
+            <a href="https://buildyourfuture.withgoogle.com/programs/step/">
+              <p class="title has-text-black is-4">Google Youtube - STEP Intern</p>
+            </a>
             <p class="subtitle has-text-black is-5"><i>Paris | July - September 2021</i></p>
             <p class="subtitle has-text-black is-5">• Created a microservice to reprocess channels<br>• Built a
               debugging dashboard
@@ -110,12 +123,13 @@
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
       <div style="padding:2%">
         <div class="columns">
           <div class="column is-one-fifth">
             <figure class="image is-128x128 center">
-              <img src="assets/images/aidaro.png" alt="google youtube">
+              <a href="https://www.facebook.com/diamlah.business/"><img class="is-rounded box m-0 p-0 has-shadow"
+                  src="assets/images/aidaro.png" alt="aidaro"></a>
             </figure>
           </div>
           <div class="column is-four-fifths has-text-left">
@@ -137,242 +151,234 @@
   <section class="has-background-white" id="projects">
 
     <h2 class="title is-2 has-text-black has-text-centered">Projects</h2>
-
-    <div class="project-table" style="padding-left: 10%;padding-right: 10%;">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/images/realsynth.png" alt="embedded synth">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="assets/images/vectorsynth.png" alt="synth">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-3">Embedded Synthesizer</p>
-              <p class="subtitle is-5">Electric synth using RT processing techniques</p>
-            </div>
+    <p class="subtitle has-text-black is-7"><i>(Source codes available on request)</i></p>
+    <div class="columns is-multiline" style="padding-left: 10%;padding-right: 10%;">
+      <div class="column gallery has-text-white is-one-quarter-widescreen is-one-third-desktop is-one-half-tablet">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/realsynth.png" alt="embedded synth">
+            </figure>
           </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title has-text-white is-3">Electroboiis Synth</p>
+                <p class="subtitle has-text-white is-6"><i>A Real Time Electric Synthesizer</i></p>
+              </div>
+            </div>
 
-          <div class="content">
-            <p class="subtitle is-5">Developed stacking synthesizer software with Platformio using the STM32duino
-              framework. Hardware was controlled using a ST NUCLEO-L432KC microcontroller module containing a
-              STM32L432KCU6U processor with an Arm Cortex-M4 core, and keyboards communicated using a CAN bus.
-              <a href="https://www.youtube.com/watch?v=HB6zd-5iiS8&ab_channel=Electroboiis">Demo</a>
-            </p>
-            <br>
-            <time datetime="2020">Spring 2022</time>
+            <div class="content">
+              <p class="subtitle has-text-white is-5">Developed stacking synthesizer software with Platformio using the
+                STM32duino framework. Controlled hardware using a ST NUCLEO-L432KC microcontroller module containing a
+                STM32L432KCU6U processor. Keyboards communicated using a CAN bus.
+              </p>
+              <button class="button is-link is-light"><a class="has-text-black"
+                  href="https://www.youtube.com/watch?v=HB6zd-5iiS8&ab_channel=Electroboiis"
+                  target="_blank">Demo</a></button>
+              <br>
+              <time datetime="2020">Spring 2022</time>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/images/app-sc.png" alt=" embedded fish tank">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="assets/images/Fish.png" alt="fish tank">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-3">AIQuarium</p>
-              <p class="subtitle is-5">Fish Tank Environment Regulator</p>
-            </div>
+      <div class="column gallery is-one-quarter-widescreen is-one-third-desktop is-one-half-tablet">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/app-sc.png" alt=" embedded fish tank">
+            </figure>
           </div>
-          <div class="content">
-            <p class="subtitle is-5">
-              Used a raspberry pi and sensors connected using I2C to calculate metrics about the environment and
-              make adjustments accordingly. Developed a product website allowing users to log in to control and
-              monitor devices unique to them.
-              <a href="https://www.youtube.com/watch?v=QbN6Gd6wdxM&ab_channel=Electroboiis">Promotional Video</a>
-            </p>
-            <br>
-            <time datetime="2022">Spring 2022</time>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/images/rover.png" alt="mars rover">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="assets/images/realrover.png" alt="rover">
-              </figure>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title has-text-white is-3">AIQuarium</p>
+                <p class="subtitle has-text-white is-6"><i>An IoT Smart Aquarium System</i></p>
+              </div>
             </div>
-            <div class="media-content">
-              <p class="title is-3">Mars Rover</p>
-              <p class="subtitle is-5">An autonomous rover to explore unknown terrain</p>
+            <div class="content">
+              <p class="subtitle has-text-white is-5">
+                Used a raspberry pi and environment sensors to calculate metrics about the environment and
+                make adjustments accordingly. The device used I2C connections and periodically sent out information.
+                Alongside this a product website allowing users to log in to control/monitor their devices.
+              </p>
+              <button class="button is-link is-light"><a class="has-text-black"
+                  href="https://www.youtube.com/watch?v=QbN6Gd6wdxM&ab_channel=Electroboiis"
+                  target="_blank">Demo</a></button>
+              <br>
+              <time datetime="2022">Spring 2022</time>
             </div>
-          </div>
-
-          <div class="content">
-            <p class="subtitle is-5">Created a rover capable of seeing obstacles and automatic routing, as a team of
-              six.
-              Implemented self navigation features and scanning, as well as energy monitoring via a dashboard created
-              using the MERN stack. Communication was possible using a pub-sub architecture and UART.
-            </p>
-            <br>
-            <time datetime="2020">Summer 2021</time>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/images/iOT.png" alt="IoT">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="assets/images/avocado.png" alt="avocado">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-3">Avocado Protector</p>
-              <p class="subtitle is-5">A network of FPGAs (for patrolling the avocado fields)</p>
-            </div>
+      <div class="column gallery is-one-quarter-widescreen is-one-third-desktop is-one-half-tablet">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/rover.png" alt="mars rover">
+            </figure>
           </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title has-text-white is-3">Robert</p>
+                <p class="subtitle has-text-white is-6"><i>An Autonomous Mars Rover</i></p>
+              </div>
+            </div>
 
-          <div class="content">
-            <p class="subtitle is-5">Used Python, C++ and verilog in combinations with FPGAs. Used signal processing
-              to detect suddent movements and socket programming with JTAG-UART to communicate between devices.
-              Messages were encrypted and sent across TCP.
-            </p>
-            <br>
-            <time datetime="2020">Spring 2021</time>
+            <div class="content">
+              <p class="subtitle has-text-white is-5">Created a rover capable of seeing obstacles and automatic routing,
+                as a team of
+                six.
+                Implemented self navigation features and scanning, as well as energy monitoring via a dashboard created
+                using the MERN stack. Communication was possible using a pub-sub architecture and UART.
+              </p>
+              <button class="button is-link is-light"><a class="has-text-black" href="https://youtu.be/6yyruhQoCZY"
+                  target="_blank">Demo</a></button>
+              <br>
+              <time datetime="2020">Summer 2021</time>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/images/cogs.png" alt="compiler">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="assets/images/C.png" alt="C">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-3">C99 to MIPS compiler </p>
-              <p class="subtitle is-5">A C++ compiler</p>
-            </div>
+      <div class="column gallery is-one-quarter-widescreen is-one-third-desktop is-one-half-tablet">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/iOT.png" alt="IoT">
+            </figure>
           </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title has-text-white is-3">Avocado Protector</p>
+                <p class="subtitle has-text-white is-6"><i>A Network of Fall Detection FPGAs</i></p>
+              </div>
+            </div>
 
-          <div class="content">
-            <p class="subtitle is-5">Used C++, makefiles, and bash scripting to create a C to MIPS compiler capable of
-              converting functions, arrays, arithmetic and enums (to name a few).
-            </p>
-            <br>
-            <time datetime="2020">Spring 2021</time>
+            <div class="content">
+              <p class="subtitle has-text-white is-5">Used Python, C++ and SystemVerilog in combinations with FPGAs.
+                Used signal processing on accelerometer data
+                to detect sudden movements and socket programming with JTAG-UART to communicate between devices. Devices
+                reported to a central control node;
+                messages were encrypted and sent across TCP.
+              </p>
+              <br>
+              <time datetime="2020">Spring 2021</time>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/images/CPU.png" alt="CPU">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="assets/images/MIPS.png" alt="MIPS">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-3">MIPS CPU</p>
-              <p class="subtitle is-5">A Verilog implementation of a MIPS processor</p>
-            </div>
+      <div class="column gallery is-one-quarter-widescreen is-one-third-desktop is-one-half-tablet">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/cogs.png" alt="compiler">
+            </figure>
           </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title has-text-white is-3">C99 to MIPS compiler </p>
+                <p class="subtitle has-text-white is-6"><i>A C++ Compiler</i></p>
+              </div>
+            </div>
 
-          <div class="content">
-            <p class="subtitle is-5">Used System Verilog to create a five stage MIPS processor following the Harvard
-              architecture. Created a test bench using C++ and bash scripts, which could be used to test any Harvard
-              implementation.
-            </p>
-            <br>
-            <time datetime="2020">Autumn 2020</time>
+            <div class="content">
+              <p class="subtitle has-text-white is-5">Implemented a C to MIPS compiler capable of
+                converting functions, arrays, arithmetic and enums (to name a few). Created a number of unit tests and
+                generated test cases. Used C++, makefiles, and bash scripting.
+              </p>
+              <br>
+              <time datetime="2020">Spring 2021</time>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/images/Oscilloscope.png" alt="Oscilloscope">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="assets/images/generic_code.png" alt="code">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-3">Circuit Simulator</p>
-              <p class="subtitle is-5">A C++ program to simulate simple circuits</p>
-            </div>
+      <div class="column gallery is-one-quarter-widescreen is-one-third-desktop is-one-half-tablet">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/MIPS.png" alt="CPU">
+            </figure>
           </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title has-text-white is-3">MIPS CPU</p>
+                <p class="subtitle has-text-white is-6"><i>A Verilog Implementation of a MIPS Processor</i></p>
+              </div>
+            </div>
 
-          <div class="content">
-            <p class="subtitle is-5">Used C++ to create a circuit simulator similar to LTSpice. Supported resistors,
-              inductors, capacitors and diodes, using the Eigen library and matrix methods to simplify calculations.
-            </p>
-            <br>
-            <time datetime="2020">Summer 2020</time>
+            <div class="content">
+              <p class="subtitle has-text-white is-5">Used SystemVerilog to create a five stage MIPS processor following
+                the Harvard
+                architecture. Created a test bench using C++ and bash scripts, which could be used to test any Harvard
+                implementation.
+              </p>
+              <br>
+              <time datetime="2020">Autumn 2020</time>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/images/game.png" alt="game">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="assets/images/pygamehead.png" alt="snek">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">RGB RPG</p>
-              <p class="subtitle is-5">A Python RPG</p>
-            </div>
+      <div class="column gallery is-one-quarter-widescreen is-one-third-desktop is-one-half-tablet">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/Oscilloscope.png" alt="Oscilloscope">
+            </figure>
           </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title has-text-white is-3">Circuit Simulator</p>
+                <p class="subtitle has-text-white is-6"><i>A C++ Program to Simulate Simple Circuits</i></p>
+              </div>
+            </div>
 
-          <div class="content">
-            <p class="subtitle is-5">Used Pygame to create an educational RPG using point and click movements. Stored
-              user data and revision questions in a SQLite database. The game was based off existing programs such as
-              Prodigy and Dragonfable!
-            </p>
-            <br>
-            <time datetime="2020">Summer 2019</time>
+            <div class="content">
+              <p class="subtitle has-text-white is-5">Built a circuit simulator similar to LTSpice using C++. Supported
+                resistors,
+                inductors, capacitors and diodes, using the Eigen library and matrix methods to simplify calculations.
+                Visualisations were generated from bash scripts.
+              </p>
+              <button class="button is-link is-light"><a class="has-text-black" href="https://youtu.be/IUy9eHoLILE"
+                  target="_blank">Demo</a></button>
+              <br>
+              <time datetime="2020">Summer 2020</time>
+            </div>
           </div>
         </div>
       </div>
+      <div class="column gallery is-one-quarter-widescreen is-one-third-desktop is-one-half-tablet">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/images/game.png" alt="game">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
 
+              <div class="media-content">
+                <p class="title has-text-white is-3">RGB RPG</p>
+                <p class="subtitle has-text-white is-6"><i>An A level Revision RPG</i></p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="subtitle has-text-white is-5">Used Pygame to create an educational RPG using point and click
+                movements. Stored
+                user data and revision questions in a SQLite database. The game was based off existing programs such as
+                Prodigy and Dragonfable.
+              </p>
+              <br>
+              <time datetime="2020">Summer 2019</time>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -381,8 +387,8 @@
   <section class="has-background-white-ter" id="education">
     <div style="padding-left: 10%;padding-right: 10%;">
       <h2 class="title is-2 has-text-black has-text-centered">Education</h2>
-      
-      <div style="padding:2%"class=" has-text-left">
+
+      <div style="padding:2%" class=" has-text-left">
         <p class="title is-3 has-text-black">
           Imperial College London
         </p>
